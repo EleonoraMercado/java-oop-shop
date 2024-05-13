@@ -74,12 +74,12 @@ public class Prodotto {
     
     //Metodo per creare il nome esteso
     public String getNomeEsteso() {
-	String codiceFormattato = formattaCodice(codice);  //ricordarmi che sto  formattando il codice a 8 cifre in riferimento al bonus..
+	String codiceFormattato = formattaCodice(codice);  
 	String nomeEsteso = codiceFormattato + "-" + nome;
 	return nomeEsteso;
     }
     
-    //creo il metodo per il codice random privato perche lo voglio interno alla classe prodotto.
+    //metodo codice random
     private int codiceRandom() {
 	Random random = new Random();
 	return random.nextInt(90000000) + 10000000;
